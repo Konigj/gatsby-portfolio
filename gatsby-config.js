@@ -3,7 +3,8 @@ module.exports = {
       title: `portfolio-gatsby`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: [{
+  plugins: ['gatsby-plugin-postcss',
+    {
     resolve: 'gatsby-plugin-google-analytics',
     options: {
       "trackingId": "asf"
@@ -20,5 +21,6 @@ module.exports = {
       "path": "./src/images/"
     },
     __key: "images"
-  }]
+  },
+  ]
 };
