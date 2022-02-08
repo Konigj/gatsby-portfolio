@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
-      title: `portfolio-gatsby`,
-    siteUrl: `https://www.yourdomain.tld`
+      title: `Juan Rey's Portfolio`,
+    siteUrl: `https://www.juanrey.co`, 
+    author: `Juan Rey`,
+    description: `Juan Rey's Portfolio created using Gatsby`,
   },
   plugins: ['gatsby-plugin-postcss',
     {
@@ -21,6 +23,14 @@ module.exports = {
       "path": "./src/images/"
     },
     __key: "images"
+  },
+  {
+    resolve: 'gatsby-plugin-react-svg',
+    options: {
+      rule: {
+        include: /images/
+      }
+    }
   },
   ]
 };

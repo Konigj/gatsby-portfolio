@@ -1,8 +1,15 @@
 import React from 'react';
+import Layout from '../components/Layout';
 
 const blog = () => {
   return (
-      <h1> Desde Blog</h1>
+    <Layout page="Blog">
+    <main className="container">
+      <h1 className="text-center w-full bg-slate-900"> Juan Rey</h1>
+      <p className="text-center "> Desde Blog Pa</p>
+    </main>
+  
+  </Layout>
   )
 };
 
