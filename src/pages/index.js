@@ -1,12 +1,21 @@
 import * as React from "react"
+import AboutSection from "../components/AboutSection";
+import BlogSection from "../components/BlogSection";
+import ContactSection from "../components/ContactSection";
+import HeroSection from "../components/HeroSection";
 import Layout from '../components/Layout'
+import ProjectsSection from "../components/ProjectsSection";
 
 const IndexPage = () => {
+
   return (
     <Layout page="Home">
       <main className="container">
-        <h1 className="text-center text-white bg-slate-900"> Juan Rey</h1>
-        <p className="text-center "> Juan Rey</p>
+        <HeroSection/>
+        <AboutSection/>
+        <ProjectsSection/>
+        <BlogSection/>
+        <ContactSection/>
       </main>
     </Layout>
   )
