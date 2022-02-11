@@ -14,7 +14,7 @@ const Header = () => {
 
 
   return (
-      <header className='md:my-8 h-16 md:h-20 p-2 flex content-center items-center'>
+      <header className='container md:my-8 h-16 md:h-20 p-2 flex content-center items-center'>
         <div className='container flex px-2 items-center justify-between'>
             <Link to='/'>
                 <img src={logo.publicURL} alt='logo'/>

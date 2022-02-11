@@ -10,7 +10,7 @@ const IndexPage = () => {
 
   return (
     <Layout page="Home">
-      <main className="container">
+      <main>
         <HeroSection/>
         <AboutSection/>
         <ProjectsSection/>

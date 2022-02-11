@@ -2,13 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    font-family: 'Bitter', sans-serif;
-}
+html {font-family: 'Bitter', sans-serif;}
 
-body{
-   background-color: #F6F6EF;
-}
+body{ background-color: #FFF; 
+   color: #373A3C; }
 
 ul{
    list-style: none;
@@ -16,11 +13,8 @@ ul{
    padding: 0;
 }
 
-img {
-   max-width: 100%;
-}
+
+img {max-width: 100%;}
 
 a[href^=tel]{ color:#000; text-decoration:none;}
-a, button {
-   color: black;
-}
+a, button {color: black;}

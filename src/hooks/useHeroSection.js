@@ -20,15 +20,8 @@ const useHeroSection = () => {
                         url
                         localFile {
                         childImageSharp {
-                            fluid(maxWidth: 400) {
-                            base64
-                            tracedSVG
-                            srcWebp
-                            srcSetWebp
-                            originalImg
-                            originalName
+                            gatsbyImageData(width: 400, formats: AUTO)
                             }
-                        }
                         }
                     }
                     }

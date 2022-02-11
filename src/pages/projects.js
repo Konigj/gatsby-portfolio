@@ -1,10 +1,13 @@
 import React from 'react'
 import Layout from '../components/Layout';
+import ProjectsSection from '../components/ProjectsSection';
 
 const Projects = () => {
   return ( 
       <Layout page="Projects">
-      <h1> Desde Projects</h1>
+      <main>
+        <ProjectsSection/>
+      </main>
       </Layout>
   )
 }
