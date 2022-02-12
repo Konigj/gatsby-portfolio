@@ -12,6 +12,7 @@ const useBlogs = () => {
                     blog_title
                     created_at(formatString: $formatString)
                     id
+                    Slug
                     post_description
                     published_at(formatString: $formatString1)
                     blog_image {
