@@ -6,11 +6,15 @@ import TechTag from './TechTag';
 const Project = ({project}) => {
     const {title,company_name, project_description,project_image,project_link, id, Tag, project_bg } = project;
     const image = getImage(project_image.localFile.childImageSharp.gatsbyImageData)
+
+    const bg1 = project_bg.slice(7, 13)
+    const bg2 = project_bg.slice(20, 26)
+
   return (
     <div className='flex flex-col lg:flex-row lg:gap-8 lg:mb-16 my-auto'>
         <div className='lg:w-1/2 py-8 relative'>
             <div className='absolute w-3/4 lg:4/5 h-[90%]'>
-                <div className={`absolute w-3/4  h-[100%] bg-gradient-to-tr ${project_bg}`}></div>
+                <div style={{backgroundImage: `linear-gradient(to right, #${bg1}, #${bg2})`}} className={`absolute w-3/4  h-[100%] rounded-sm`}></div>
             </div>
             <div className='image p-5'> 
                 <GatsbyImage image={image} className='relative' alt={id}/>

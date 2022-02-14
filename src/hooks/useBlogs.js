@@ -4,17 +4,17 @@ const useBlogs = () => {
 
     const result = useStaticQuery(
         graphql`
-            query ($formatString: String = "", $formatString1: String = "") {
+            query {
             allStrapiBlogs(sort: {fields: published_at, order: DESC}) {
                 edges {
                 node {
                     blog_content
                     blog_title
-                    created_at(formatString: $formatString)
+                    created_at(formatString: "DD MMMM, YYYY")
                     id
                     Slug
                     post_description
-                    published_at(formatString: $formatString1)
+                    published_at(formatString: "DD MMMM, YYYY")
                     blog_image {
                     localFile {
                         childImageSharp {

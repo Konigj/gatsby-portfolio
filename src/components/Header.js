@@ -35,7 +35,7 @@ const Header = () => {
       <header className={`container lg:my-8 min-h-16 lg:h-20 p-8 flex flex-col content-center items-center  transition-all duration-1000`}>
         <div className='container flex px-2 items-center justify-between relative'>
             <Link to='/'>
-                <img src={logo.publicURL} alt='logo'/>
+                <img src={logo.publicURL} className='hover:scale-105 transition-all duration-500' alt='logo'/>
             </Link>
             <Navigation toggleMenu={toggleMenu} isOpen={isOpen}/>
         </div>

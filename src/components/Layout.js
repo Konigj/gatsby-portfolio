@@ -14,7 +14,7 @@ const Layout = ({children, page}) => {
         </Helmet>
         <Header/>
         {children}
-        <Footer/>
+        <Footer page={page}/>
       </>
       
   )

@@ -14,11 +14,9 @@ const AboutSection = () => {
                 <h4 className='text-md opacity-70 uppercase'>GET TO KNOW ME BEFORE YOU DIVE INTO MY CONTENT.</h4>
             </div>
             <div className='mt-8 container lg:w-1/2 px-8'>
-                <p className='lg:text-lg break-before-avoid-page whitespace-pre-line text-justify'>{aboutDescription}</p>
+                <p className='lg:text-lg break-before-avoid-page whitespace-pre-line text-justify leading-relaxed'>{aboutDescription}</p>
                 <div className="flex flex-col py-2 justify-items-center">
                     <p className=' my-auto lg:text-lg hover:font-bold break-before-avoid-page whitespace-pre-line text-center pt-4'>I'm happy to welcome you on my website!</p> 
-                    {//<span className='self-end text-2xl hover:rotate-[5deg] px-2 py-2 mx-auto' >😁</span>
-                    }
                 </div>
             </div>
         </div>

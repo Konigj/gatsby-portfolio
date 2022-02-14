@@ -1,7 +1,7 @@
 import React from 'react';
 import useBlogs from '../hooks/useBlogs';
 import { Link } from 'gatsby';
-import Entry from './Entry';
+import EntryHome from './EntryHome';
 import ArrowRightIcon from '../images/arrow-right-Icon.svg'
 
 const BlogSection = () => {
@@ -14,7 +14,7 @@ const BlogSection = () => {
       <div className='grid lg:grid-cols-3 gap-12 py-4 justify-center justify-items-center'>
         {
           featuredBlogs.map(entry => (
-            <Entry key={entry.node.id} entry={entry.node} />
+            <EntryHome key={entry.node.id} entry={entry.node} />
           ))
         }
       </div>

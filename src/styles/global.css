@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-html {font-family: 'Bitter', sans-serif;}
+html {
+   font-family: 'Bitter', sans-serif;
+   scroll-behavior: smooth;
+}
 
-body{ background-color: #FFF; 
-   color: #373A3C; }
+body{ 
+   background-color: #FFF; 
+   color: #373A3C; 
+}
 
 ul{
    list-style: none;
