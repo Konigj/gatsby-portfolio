@@ -15,7 +15,7 @@ const Entry = ({entry}) => {
     <div className='lg:w-[263px]  h-[300px]'>
         <Link className='relative' to={`blog/${Slug}`}>
             <GatsbyImage className='h-full rounded-xl shadow-lg' layout='fullWidth' image={image} alt={id}/>
-            <div onMouseEnter={()=>setShowDescription(true)} onMouseLeave={()=>setShowDescription(false)}
+            <div aria-hidden="true" onMouseEnter={()=>setShowDescription(true)} onMouseLeave={()=>setShowDescription(false)}
             className='absolute rounded-xl p-4 bg-gradient-to-b from-black/20 to-black/10 hover:from-black/50 hover:to-black/30 transition-all h-[300px] w-full inset-0'>
                 <h2 className=' text-white text-2xl font-bold mb-8' >{blog_title}</h2>
                 {
